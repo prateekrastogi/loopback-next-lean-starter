@@ -12,13 +12,9 @@
   },
   "scripts": {
     "build:apidocs": "lb-apidocs",
-    "build": "lb-tsc es2017 --outDir dist",
-    "build:watch": "lb-tsc --watch",
-    "clean": "lb-clean dist",
     "lint": "lb-tslint --fix && lb-prettier \"**/*.ts\" \"**/*.js\" --write",
     "migrate": "node ./dist/migrate",
-    "prestart": "npm run build",
-    "start": "node ."
+    "start": "tsc && node ."
   },
   "repository": {
     "type": "git"
