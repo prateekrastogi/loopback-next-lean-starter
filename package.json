@@ -1,7 +1,7 @@
 {
   "name": "loopback-next-lean-starter",
   "version": "1.0.0",
-  "description": "loopback next lean starter",
+  "description": "A lean approach for loopback-next projects.",
   "keywords": [
     "loopback-application",
     "loopback"
@@ -20,10 +20,10 @@
     "watch": "tsc --watch"
   },
   "repository": {
-    "type": "git"
+    "type": "git",
+    "url": "https://github.com/prateekrastogi/loopback-next-lean-starter"
   },
-  "author": "",
-  "license": "",
+  "license": "Apache-2.0",
   "files": [
     "README.md",
     "index.js",
