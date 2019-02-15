@@ -1,0 +1,53 @@
+{
+  "name": "loopback-next-lean-starter",
+  "version": "1.0.0",
+  "description": "loopback next lean starter",
+  "keywords": [
+    "loopback-application",
+    "loopback"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=8.9"
+  },
+  "scripts": {
+    "build:apidocs": "lb-apidocs",
+    "build": "lb-tsc es2017 --outDir dist",
+    "build:watch": "lb-tsc --watch",
+    "clean": "lb-clean dist",
+    "lint": "lb-tslint --fix && lb-prettier \"**/*.ts\" \"**/*.js\" --write",
+    "migrate": "node ./dist/migrate",
+    "prestart": "npm run build",
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "",
+  "license": "",
+  "files": [
+    "README.md",
+    "index.js",
+    "index.d.ts",
+    "dist",
+    "src",
+    "!*/__tests__"
+  ],
+  "dependencies": {
+    "@loopback/boot": "^1.0.12",
+    "@loopback/context": "^1.5.1",
+    "@loopback/core": "^1.1.6",
+    "@loopback/openapi-v3": "^1.2.1",
+    "@loopback/repository": "^1.1.5",
+    "@loopback/rest": "^1.5.5",
+    "@loopback/rest-explorer": "^1.1.8"
+  },
+  "devDependencies": {
+    "@loopback/build": "^1.3.0",
+    "@loopback/testlab": "^1.0.6",
+    "@loopback/tslint-config": "^2.0.0",
+    "@types/node": "^10.11.2",
+    "tslint": "^5.12.0",
+    "typescript": "^3.3.1"
+  }
+}
