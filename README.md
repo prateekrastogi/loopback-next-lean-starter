@@ -1,7 +1,7 @@
 # loopback-next-lean-starter
 
 
-A lean approach for [loopback-next] projects(http://loopback.io/).
+A lean approach for [loopback-next](http://loopback.io/) projects.
 
 Major modifications are:
 
